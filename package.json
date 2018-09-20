@@ -1,0 +1,24 @@
+{
+  "name": "responsive-portfolio-website",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio Website",
+  "main": "index.js",
+  "homepage": "https://downthematrix/responsive-portfolio-website",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DownTheMatrix/responsive-portfolio-website.git"
+  },
+  "author": "Bruno Mazza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DownTheMatrix/responsive-portfolio-website/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.0",
+    "node-sass": "^4.9.3"
+  }
+}
