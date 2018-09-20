@@ -2,8 +2,8 @@
 .menu-btn {
     position: absolute;
     z-index: 3;
-    right: 35px;
-    top: 35px;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
     @include easeOut;
 
@@ -33,7 +33,7 @@
 
             // Line 3 - Rotate
             &:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -6px);
+                transform: rotate(135deg) translate(-6px, 6px);
             }
         }
     }
@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     visibility: hidden;
 
     &.show {
@@ -61,6 +61,7 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+        background-color: rgba(darken($primary-color, 5), 0.9);
     }
 
     &-nav {
@@ -91,7 +92,7 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url('../img/portrait.jpg');
+            background-image: url('../img/portrait.jpg');
             border-radius: 50%;
             border: solid 3px $secondary-color;
         }
