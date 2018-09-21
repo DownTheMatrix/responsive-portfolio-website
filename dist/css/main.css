@@ -1,3 +1,4 @@
+/* Set Text Color */
 /* Media Query Mixins */
 .menu-btn {
   position: absolute;
@@ -302,6 +303,7 @@ main#home h1 {
   padding: 0.5rem 1.5rem;
   background: #4EB1BA;
   color: #000;
+  cursor: pointer;
 }
 
 .boxes div:hover span {
