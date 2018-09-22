@@ -176,6 +176,7 @@ h2.lg-heading,
 h3.lg-heading {
   font-size: 4rem;
   padding-bottom: 2rem;
+  font-weight: 400;
 }
 
 h1.sm-heading,
@@ -221,6 +222,7 @@ main .icons a:hover {
 
 main#home {
   overflow: hidden;
+  position: relative;
 }
 
 main#home h1 {
@@ -349,6 +351,11 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  
+  main {
+    align-items: center;
+    text-align: left;
+  }
 }
 
 /* Desktops & Laptops */
@@ -356,9 +363,14 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  main {
+    align-items: center;
+    text-align: center; 
+  }
 }
 
-/* Tablests */
+/* Tablets */
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
