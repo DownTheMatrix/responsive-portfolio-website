@@ -1,18 +1,22 @@
-/* Set Text Color */
-/* Media Query Mixins */
+/* General Styling */
+html {
+  font-size: 87.5%;  /* = 14px (14px / 16px default value) */
+}
+
+/* Hamburger Menu */
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 20px;
-  top: 20px;
+  right: 2rem;
+  top: 2rem;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
 
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
-  margin: 0 0 5px 0;
+  width: 2rem;
+  height: .2rem;
+  margin: 0 0 0.5rem 0;
   background: #fff;
   transition: all 0.5s ease-out;
 }
@@ -22,7 +26,7 @@
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(0.5rem, 0.5rem);
 }
 
 .menu-btn.close .btn-line:nth-child(2) {
@@ -30,7 +34,7 @@
 }
 
 .menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(135deg) translate(-6px, 6px);
+  transform: rotate(135deg) translate(-.6rem, .6rem);
 }
 
 .menu {
@@ -82,15 +86,15 @@
 }
 
 .menu-branding .portrait {
-  width: 250px;
-  height: 250px;
+  width: 17.85rem;
+  height: 17.85rem;
   background-image: url("../img/portrait.jpg");
   border-radius: 50%;
-  border: solid 3px #4EB1BA;
+  border: solid .3rem #4EB1BA;
 }
 
 .menu .nav-item {
-  transform: translate3d(600px, 0, 0);
+  transform: translate3d(60rem, 0, 0);
   transition: all 0.5s ease-out;
 }
 
@@ -105,7 +109,7 @@
 .menu .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 3rem;
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
@@ -134,17 +138,22 @@
   transition-delay: 0.4s;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+
 }
 
 body {
   background: #222930;
   color: #fff;
   height: 100%;
-  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 body#bg-img {
@@ -192,6 +201,7 @@ a {
   text-decoration: none;
 }
 
+/* Header */
 header {
   position: fixed;
   z-index: 2;
@@ -204,7 +214,7 @@ header {
 
 main {
   padding: 1rem;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 4rem);
 }
 
 main .icons {
@@ -232,7 +242,7 @@ main#home h1 {
 /* About Page */
 .about-info {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 1rem;
   grid-template-areas: 'bioimage bio bio'
     'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr);
@@ -242,7 +252,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #4EB1BA 3px solid;
+  border: #4EB1BA .3rem solid;
 }
 
 .about-info .bio {
@@ -265,7 +275,7 @@ main#home h1 {
 .about-info .job {
   background: #2d363f;
   padding: 0.5rem;
-  border-bottom: #4EB1BA 5px solid;
+  border-bottom: solid .5rem #4EB1BA ;
 }
 
 .projects {
@@ -276,7 +286,7 @@ main#home h1 {
 
 .projects img {
   width: 100%;
-  border: solid 3px #fff;
+  border: solid 0.3rem #fff;
 }
 
 .projects img:hover {
@@ -295,7 +305,7 @@ main#home h1 {
 
 .boxes div {
   font-size: 1rem;
-  border: 3px #fff solid;
+  border: solid .3rem #fff;
   padding: 1.5rem 2.5rem;
   margin-bottom: 2rem;
   transition: all 0.5s ease-out;
@@ -343,7 +353,7 @@ main#home h1 {
   padding: 1rem;
   background: #0d1012;
   color: #fff;
-  height: 60px;
+  height: 4rem;
 }
 
 /* Wide Screens */
@@ -397,7 +407,12 @@ main#home h1 {
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
+    font-size: 2.4rem;
+  }
+
+  .menu .nav-link {
+    font-size: 2rem;
+    padding: .5rem 0;
   }
 
   .menu-branding {
@@ -407,8 +422,8 @@ main#home h1 {
 
   .menu-branding .portrait {
     background-image: url("../img/portrait_small.jpg");
-    width: 150px;
-    height: 150px;
+    width: 10.71rem;
+    height: 10.71rem;
   }
 
   .about-info {
@@ -446,5 +461,10 @@ main#home h1 {
 
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .menu .nav-link {
+    font-size: 2rem;
+    padding: .5rem 0;
   }
 }
