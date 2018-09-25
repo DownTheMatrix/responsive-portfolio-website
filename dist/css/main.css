@@ -320,6 +320,7 @@ main#home h1 {
 
 .boxes div:hover span {
   color: #000;
+  font-weight: 400;
 }
 
 .btn,
