@@ -1,4 +1,4 @@
-/* General Styling */
+/* Root Styling */
 html {
   font-size: 87.5%;  /* = 14px (14px / 16px default value) */
 }
@@ -49,6 +49,7 @@ html {
   visibility: visible;
 }
 
+/* Navigation / Menu */
 .menu-branding,
 .menu-nav {
   display: flex;
@@ -138,6 +139,7 @@ html {
   transition-delay: 0.4s;
 }
 
+/* General Styling */
 *,
 *::before,
 *::after {
@@ -243,8 +245,9 @@ main#home h1 {
 .about-info {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: 'bioimage bio bio'
-    'job1 job2 job3';
+  grid-template-areas: 
+    "bioimage bio bio"
+    "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -428,7 +431,8 @@ main#home h1 {
   }
 
   .about-info {
-    grid-template-areas: "bioimage"
+    grid-template-areas: 
+      "bioimage"
       "bio"
       "job1"
       "job2"
