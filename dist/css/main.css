@@ -257,6 +257,7 @@ main#home h1 {
   margin: auto;
   border-radius: 50%;
   border: #4EB1BA .3rem solid;
+  margin-bottom: 1rem;
 }
 
 .about-info .bio {
@@ -278,7 +279,7 @@ main#home h1 {
 
 .about-info .job {
   background: #2d363f;
-  padding: 2.5rem;
+  padding: 4.5rem;
   border-bottom: solid .5rem #4EB1BA ;
 }
 
