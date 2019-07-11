@@ -20,6 +20,7 @@
   "dependencies": {
     "gh-pages": "^2.0.0",
     "lodash": "^4.17.14",
+    "lodash.mergewith": "^4.6.2",
     "node-sass": "^4.9.3"
   }
 }
