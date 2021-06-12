@@ -23,6 +23,7 @@
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
     "node-sass": "^4.13.1",
+    "normalize-url": "^6.0.1",
     "yargs-parser": "^20.2.1"
   }
 }
