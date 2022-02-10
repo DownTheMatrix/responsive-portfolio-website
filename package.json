@@ -22,7 +22,7 @@
     "lodash": "^4.17.21",
     "lodash.mergewith": "^4.6.2",
     "minimist": "^1.2.5",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "normalize-url": "^6.0.1",
     "tar": "^6.1.11",
     "trim-newlines": "^4.0.2",
